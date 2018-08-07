@@ -48,23 +48,23 @@ namespace KerbalJointReinforcement
     {
         public static bool IsCompatible()
         {
-            /*-----------------------------------------------*\
+			/*-----------------------------------------------*\
             |    BEGIN IMPLEMENTATION-SPECIFIC EDITS HERE.    |
             \*-----------------------------------------------*/
 
-            // TODO: Implement your own compatibility check.
-            //
-            // If you want to disable some behavior when incompatible, other parts of the plugin
-            // should query this method:
-            //
-            //    if (!CompatibilityChecker.IsCompatible()) {
-            //        ...disable some features...
-            //    }
-            //
-            // Even if you don't lock down functionality, you should return true if your users
-            // can expect a future update to be available.
-            //
-            return (Versioning.version_major == 1 && Versioning.version_minor == 3) || (Versioning.version_major == 0 && Versioning.version_minor == 1 && Versioning.Revision == 3);
+			// TODO: Implement your own compatibility check.
+			//
+			// If you want to disable some behavior when incompatible, other parts of the plugin
+			// should query this method:
+			//
+			//    if (!CompatibilityChecker.IsCompatible()) {
+			//        ...disable some features...
+			//    }
+			//
+			// Even if you don't lock down functionality, you should return true if your users
+			// can expect a future update to be available.
+			//
+			return true;
 
             /*-----------------------------------------------*\
             | IMPLEMENTERS SHOULD NOT EDIT BEYOND THIS POINT! |
